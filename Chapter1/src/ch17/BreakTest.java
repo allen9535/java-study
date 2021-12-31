@@ -11,6 +11,8 @@ public class BreakTest {
       sum += num;
 
       if (sum >= 100) {
+        // break는 가장 가까이에 있는 반복문을 탈출한다.
+        // 모든 반복문을 전부 탈출하는 것이 아니다.
         break;
       }
     }
