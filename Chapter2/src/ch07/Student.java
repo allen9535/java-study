@@ -12,6 +12,7 @@ public class Student {
     this.studentID = studentID;
     this.studentName = studentName;
 
+    // 인스턴스가 생성되지 않았으므로, 생성자에서 생성하여 사용한다.
     korea = new Subject();
     math = new Subject();
 
