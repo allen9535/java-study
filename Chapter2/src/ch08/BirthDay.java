@@ -37,6 +37,9 @@ public class BirthDay {
   public void setYear(int year) {
     this.year = year;
   }
+  public boolean getIsValid() {
+    return isValid;
+  }
 
   public void showDate() {
     if (isValid) {
