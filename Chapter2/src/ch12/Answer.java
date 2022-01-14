@@ -3,7 +3,6 @@ package ch12;
 public class Answer {
 
   public static void main(String[] args) {
-
     Customer customer = new Customer();
     customer.setName("Edward");
     customer.setMoney(20000);
@@ -16,7 +15,6 @@ public class Answer {
 
     System.out.printf("%s님의 남은 돈은 %d원 입니다.\n", customer.getName(), customer.getMoney());
     System.out.printf("%s택시의 수입은 %d원 입니다.\n", taxi.getCompany(), taxi.getIncome());
-
   }
 
 }

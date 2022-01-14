@@ -3,7 +3,6 @@ package ch07;
 public class SubjectTest {
 
   public static void main(String[] args) {
-
     Student studentLee = new Student(100, "Lee");
     studentLee.setKoreaSubject("국어", 100);
     studentLee.seMathSubject("수학", 99);
@@ -14,7 +13,6 @@ public class SubjectTest {
 
     studentLee.showScoreInfo();
     studentKim.showScoreInfo();
-
   }
 
 }

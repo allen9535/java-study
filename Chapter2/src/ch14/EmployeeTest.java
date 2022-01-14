@@ -3,7 +3,6 @@ package ch14;
 public class EmployeeTest {
 
   public static void main(String[] args) {
-
     Employee employeeLee = new Employee();
     employeeLee.setEmployeeName("이모");
 
@@ -12,7 +11,6 @@ public class EmployeeTest {
 
     System.out.printf("%s, %d\n", employeeLee.getEmployeeName(), employeeLee.getEmployeeId());
     System.out.printf("%s, %d\n", employeeKim.getEmployeeName(), employeeKim.getEmployeeId());
-
   }
 
 }

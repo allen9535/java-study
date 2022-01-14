@@ -3,7 +3,6 @@ package ch11.answer.course;
 public class TakeTransTest {
 
   public static void main(String[] args) {
-
     Student studentJ = new Student("James", 5000);
     Student studentT = new Student("Tomas", 10000);
 
@@ -21,7 +20,6 @@ public class TakeTransTest {
     bus100.showBusInfo();
 
     subwayGreen.showSubwayInfo();
-
   }
 
 }

@@ -33,7 +33,6 @@ public class FunctionTest {
 
   // 프로그램을 실행시키면 제일 먼저 main() 함수가 사용할 메모리 공간이 스택에 생성된다.
   public static void main(String[] args) {
-
     int n1 = 10;
     int n2 = 20;
 
@@ -45,7 +44,6 @@ public class FunctionTest {
 
     System.out.println(total);
     System.out.println(num);
-
   }
 
 }

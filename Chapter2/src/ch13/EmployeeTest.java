@@ -5,7 +5,6 @@ import ch14.Employee;
 public class EmployeeTest {
 
   public static void main(String[] args) {
-
     Employee employeeLee = new Employee();
     employeeLee.setEmployeeName("이모");
     System.out.println(employeeLee.serialNum);
@@ -20,7 +19,6 @@ public class EmployeeTest {
 
     // 스태틱 변수는 클래스 이름으로 직접 참조한다.
     System.out.println(Employee.serialNum);
-
   }
 
 }

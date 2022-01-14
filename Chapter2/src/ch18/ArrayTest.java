@@ -9,7 +9,6 @@ public class ArrayTest {
   // 배열의 순서는 0부터 시작한다.
   // 자바에서는 객체 배열을 구현한 ArrayList를 많이 활용한다.
   public static void main(String[] args) {
-
     // 배열 선언
     // 4바이트 자료형을 10개 모았으므로 총 40바이트를 사용한다.
     int[] arr1 = new int[10];
@@ -31,15 +30,11 @@ public class ArrayTest {
     int total = 0;
 
     for (int i = 0, num = 1; i < arr.length; i++, num++) {
-
       arr[i] += num;
-
     }
 
     for (int i = 0; i < arr.length; i++) {
-
       total += arr[i];
-
     }
 
     System.out.println(total);
@@ -58,9 +53,7 @@ public class ArrayTest {
     // dArr[3]과 dArr[4]는 데이터를 입력하지 않았으므로 0.0으로 초기화되어 있을 것이다.
     // 어떤 수에든 0을 곱하면 0이 나오므로, 아래 for문의 결과는 무조건 0이다.
     for (int i = 0; i < dArr.length; i++) {
-
       mtotal *= dArr[i];
-
     }
 
     System.out.println(mtotal);
@@ -78,13 +71,10 @@ public class ArrayTest {
 
     mtotal = 1;
     for (int i = 0; i < count; i++) {
-
       mtotal *= dArr[i];
-
     }
 
     System.out.println(mtotal);
-
   }
 
 }

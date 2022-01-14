@@ -10,9 +10,7 @@ public class Company {
   // 외부에서 접근해 쉽게 새 인스턴스를 만들 수 있게 된다.
   // 이러한 상황을 방지하기 위해 생성자를 private으로 선언한다.
   private Company() {
-
     // 필요한 코드가 있다면 삽입해도 된다.
-
   }
 
   // 현재 클래스의 유일한 인스턴스를 생성한다.
@@ -21,17 +19,13 @@ public class Company {
 
   // 현재 클래스에서 생성된 유일한 인스턴스에 접근할 수 있는 getter를 제공한다.
   public static Company getInstance() {
-
     // 인스턴스가 생성되지 않았다면 새 인스턴스를 생성하라는 코드
     // 그럴 일은 없겠지만, 만약을 위한 방어적인 코드이다.
     if (instance == null) {
-
       instance = new Company();
-
     }
 
     return instance;
-
   }
 
 }

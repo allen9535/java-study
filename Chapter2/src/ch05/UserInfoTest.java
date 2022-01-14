@@ -3,7 +3,6 @@ package ch05;
 public class UserInfoTest {
 
   public static void main(String[] args) {
-
     // public UserInfo(){} 생성자 호출 후 사용
     UserInfo userLee = new UserInfo();
     userLee.userId = "a12345";
@@ -18,7 +17,6 @@ public class UserInfoTest {
     UserInfo userKim = new UserInfo("b12345", "09876mnbvc", "Kim");
 
     System.out.println(userKim.showUserInfo());
-
   }
 
 }

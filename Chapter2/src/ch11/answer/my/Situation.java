@@ -3,7 +3,6 @@ package ch11.answer.my;
 public class Situation {
 
   public static void main(String[] args) {
-
     Student james = new Student();
     james.setName("James");
     james.setPrincipal(5000);
@@ -27,7 +26,6 @@ public class Situation {
         james.getName(), james.getPrincipal(), bus.getBusNo(), bus.getCharge(), james.getBalance());
     System.out.printf("%s는 %d원을 가지고 있었고, %s색 지하철을 타면서 %d원을 지불합니다. 잔액은 %d원입니다.\n", 
         tomas.getName(), tomas.getPrincipal(), subway.getColor(), subway.getCharge(), tomas.getBalance());
-
   }
 
 }

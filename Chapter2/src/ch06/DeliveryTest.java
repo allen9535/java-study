@@ -3,7 +3,6 @@ package ch06;
 public class DeliveryTest {
 
   public static void main(String[] args) {
-
     DeliveryInfo deli = new DeliveryInfo();
     deli.orderNo = 202011020003L;
     deli.phoneNo = 01023450001L;
@@ -20,7 +19,6 @@ public class DeliveryTest {
     System.out.printf("주문 시간: %d\n", deli.orderTime);
     System.out.printf("주문 가격: %d\n", deli.price);
     System.out.printf("주문 번호: %04d\n", deli.menuNo);
-
   }
 
 }
