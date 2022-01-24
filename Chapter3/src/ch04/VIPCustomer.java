@@ -13,8 +13,8 @@ public class VIPCustomer extends Customer {
   private int agentID;
   double salesRatio;
 
-  // super를 사용해 상위 클래스의 생성자를 명시적으로 호출한다.
   public VIPCustomer(int customerID, String customerName) {
+    // super를 사용해 상위 클래스의 생성자를 명시적으로 호출한다.
     super(customerID, customerName);
 
     customerGrade = "VIP";
