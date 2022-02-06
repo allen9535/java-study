@@ -14,12 +14,17 @@ public class StringTest {
     // 로컬 메모리에 객체가 없을 경우나 원격 프로그래밍을 할 때, 객체의 타입을 알 수 없는 경우 사용한다.
     // java.lang.reflect 패키지에 있는 클래스를 활용해 프로그래밍한다.
     // 일반적으로 자료형을 알고 있는 경우 사용하지 않는다.
-    Constructor<String>[] cons = c1.getConstructors();
+
+    // 클래스 생성자(Constructor)를 반환받는 메서드 getConstructors()
+    System.out.println("--------------- getConstructors() ---------------");
+    Constructor[] cons = c1.getConstructors();
     for (Constructor c: cons) {
       System.out.println(c);
     }
     System.out.println();
 
+    // 클래스 메서드를 반환받는 메서드 getMethods()
+    System.out.println("--------------- getMethods() ---------------");
     Method[] methods = c1.getMethods();
     for (Method m: methods) {
       System.out.println(m);
