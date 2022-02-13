@@ -1,9 +1,9 @@
 package ch02;
 
-public class MyIntArrayTest {
+public class MyArrayListTest {
 
   public static void main(String[] args) {
-    MyIntArray array = new MyIntArray();
+    MyArrayList array = new MyArrayList();
     array.addElement(10);
     array.addElement(20);
     array.addElement(30);

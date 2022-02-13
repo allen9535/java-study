@@ -1,32 +1,32 @@
 package ch02;
 
-// Array의 특징
+// ArrayList의 특징
 // 동일한 데이터 타입을 순서에 따라 관리하는 자료 구조이다.
 // 정해진 크기가 있으며, 요소의 추가와 제거 시 다른 요소들의 이동을 필요로 한다.
 // 배열의 i번째 요소를 찾는 인덱스 연산이 빠르다.
 // jdk 클래스: ArrayList, Vector
 
-// int만 다루는 ArrayList 구현
-public class MyIntArray {
+// ArrayList 구현
+public class MyArrayList {
 
   public int ARRAY_SIZE;
   public static final int ERROR_NUM = -999999999;
 
   // Array로 만들 Object 배열(모든 클래스의 최상위 클래스가 Object이므로)
-  int[] intArr;
+  Object[] arr;
   // 갯수
   int count;
 
-  public MyIntArray() {
+  public MyArrayList() {
     count = 0;
     ARRAY_SIZE = 10;
-    intArr = new int[ARRAY_SIZE];
+    arr = new Object[ARRAY_SIZE];
   }
 
-  public MyIntArray(int size) {
+  public MyArrayList(int size) {
     count = 0;
     ARRAY_SIZE = size;
-    intArr = new int[size];
+    arr = new Object[size];
   }
 
   public void addElement(int num) {
@@ -36,7 +36,7 @@ public class MyIntArray {
       return;
     }
 
-    intArr[count++] = num;
+    arr[count++] = num;
   }
 
   public void insertElement(int position, int num) {
@@ -58,15 +58,15 @@ public class MyIntArray {
 
     // 배열을 한 개 씩 이동한다.
     for (i = count; i >= position; i--) {
-      intArr[i] = intArr[i - 1];
+      arr[i] = arr[i - 1];
     }
 
-    intArr[position] = num;
+    arr[position] = num;
     count++;
   }
 
   public Object removeElement(int position) {
-    int ret = ERROR_NUM;
+    Object ret = ERROR_NUM;
 
     if (isEmpty()) {
       System.out.println("요소가 존재하지 않습니다.");
@@ -80,14 +80,14 @@ public class MyIntArray {
       return ret;
     }
 
-    ret = intArr[position];
+    ret = arr[position];
     if (position > 0 && position < count) {
       for (int i = position; i < count; i++) {
-        intArr[i] = intArr[i + 1];
+        arr[i] = arr[i + 1];
       }
     } else if (position == 0) {
       for (int i = 0; i < count; i++) {
-        intArr[i] = intArr[i + 1];
+        arr[i] = arr[i + 1];
       }
     }
     count--;
@@ -107,14 +107,14 @@ public class MyIntArray {
     }
   }
 
-  public int getElement(int position) {
+  public Object getElement(int position) {
     if (position < 0 || position > count - 1) {
       System.out.printf("검색 위치 오류가 발생했습니다. 현재 리스트 갯수는 %d개 입니다.\n", count);
 
       return ERROR_NUM;
     }
 
-    return intArr[position];
+    return arr[position];
   }
 
   public void printAll() {
@@ -125,13 +125,13 @@ public class MyIntArray {
     }
 
     for (int i = 0; i < count; i++) {
-      System.out.println(intArr[i]);
+      System.out.println(arr[i]);
     }
   }
 
   public void removeAll() {
     for (int i = 0; i < count; i++) {
-      intArr[i] = 0;
+      arr[i] = 0;
     }
     count = 0;
   }
