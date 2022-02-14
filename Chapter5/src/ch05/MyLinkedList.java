@@ -1,12 +1,5 @@
-package ch03;
+package ch05;
 
-//LinkedList 특징
-//동일한 데이터 타입을 순서에 따라 관리하는 자료 구조이다.
-//자료를 저장하는 노드에는 자료와 다음 요소를 가리키는 링크(포인터)가 있다.
-//자료가 추가될 때 노드 만큼의 메모리를 할당 받고 이전 노드의 링크로 연결한다.(정해진 크기가 없다.)
-//연결 리스트의 i번째 요소를 찾는 데 걸리는 시간은 요소의 갯수에 비례한다.
-
-// LinkedList 구현
 public class MyLinkedList {
 
   private MyNode head;
@@ -21,14 +14,12 @@ public class MyLinkedList {
     MyNode newNode;
 
     if (head == null) {
-      // 맨 처음 위치에 요소를 삽입
       newNode = new MyNode(data);
       head = newNode;
     } else {
       newNode = new MyNode(data);
       MyNode temp = head;
 
-      // 가장 마지막 노드로 가서 요소를 삽입
       while (temp.next != null) {
         temp = temp.next;
       }

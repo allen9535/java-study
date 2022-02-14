@@ -1,11 +1,8 @@
-package ch03;
+package ch05;
 
-// Node 구현
 public class MyNode {
 
-  // 자료가 들어갈 변수
   private String data;
-  // 다음 노드를 가리키게 할 링크
   public MyNode next;
 
   public MyNode() {
