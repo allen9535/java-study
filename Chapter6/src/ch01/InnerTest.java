@@ -16,7 +16,7 @@ class OutClass {
     inClass = new InClass();
   }
 
-  // 인스턴스 내부 클래스
+  // 인스턴스 내부 클래스(Instance Inner Class)
   // 내부적으로 사용할 클래스를 선언한다.(private으로 선언하는 것을 권장한다.)
   // 외부 클래스가 생성된 다음 생성된다.(정적 내부 클래스와는 다르다.)
   // private이 아닌 내부 클래스는 다른 외부 클래스에서 생성 가능하다.
