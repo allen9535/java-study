@@ -22,9 +22,9 @@ public class AboutLambda {
   // 함수의 수행이 외부에 영향을 미치지 않는 것을 말한다.
 
   // 두 수를 입력 받아 더하는 add() 함수를 예시로 만들었다.
-  //  int add(int x, int y) {
-  //    return x + y;
-  //  }
+  int add(int x, int y) {
+    return x + y;
+  }
 
   // 람다식 문법
   // (매개 변수) -> {실행문;}
